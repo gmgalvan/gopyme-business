@@ -11,7 +11,7 @@ sudo apt-get install nodejs -y
 # sudo npm install nodemon -g
 
 # Install forever module 
-# https://www.npmjs.com/package/forever
+# https://www.npmjs.com/package/forever ever
 sudo npm install forever -g
 
 # Clean working folder
