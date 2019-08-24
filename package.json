@@ -1,0 +1,31 @@
+{
+  "name": "gopyment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node src/server.js",
+    "jsonServer:user": "json-server --watch ./users.json",
+    "jsonServer:admin": "json-server --watch ./admins.json",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "1.19.0",
+    "eslint": "6.2.2",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "faker": "4.1.0",
+    "morgan": "1.9.1",
+    "nodemon": "1.19.1"
+  },
+  "dependencies": {
+    "boom": "7.3.0",
+    "dotenv": "8.1.0",
+    "joi": "14.3.1",
+    "json-server": "0.15.0",
+    "jsonwebtoken": "8.5.1"
+  }
+}

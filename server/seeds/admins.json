@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "id": "2f9a0135-f806-4c97-b8e8-24bf2599f1f4",
+            "firstName": "Crawford",
+            "lastName": "Beer",
+            "email": "Felton44@hotmail.com",
+            "password": "e0VhgLLmztNX_Ch",
+            "role": "admin"
+        },
+        {
+            "id": "825b4008-1b85-40fa-a13f-ac73292bb4f2",
+            "firstName": "Eleanore",
+            "lastName": "McDermott",
+            "email": "Elwin.Cassin78@gmail.com",
+            "password": "ogyjFd0P4h3aeiJ",
+            "role": "admin"
+        }
+    ]
+}
