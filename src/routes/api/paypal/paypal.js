@@ -11,11 +11,12 @@ const validationHandler = require("../../../utilities/middelwares/validationHand
 const paypalSchema = require("../../../utilities/Schemas/paypal");
 
 const routesPaypalMidellware = app => {
-  app.post("/paypal", handlerToken, handlerPaypal);
+  app.post("/paypal", handlerToken, validationHandler(paypalSchema), handlerPaypal);
 };
 
 const handlerPaypal = (req, res, next) => {
-  const { clientid, clientsecret, authorization } = req.headers;
+  const { authorization } = req.headers;
+  const {clientid, clientsecret} = req.body
   let token = authorization.split(" ")[1];
   token = verifyToken(token);
 
@@ -52,17 +53,18 @@ const handlerPaypal = (req, res, next) => {
       const capital = 0.6;
       const payments12 = creditMountly / 10;
       //   pay for 12 mounts
-      const interestPerMounth = creditMountly * bankRate;
-      const capitalPerMount = capital * creditMountly;
+      const interestPerMounth = payments12 * bankRate;
+      const capitalPerMount = payments12 * capital;
       const interestTotal = interestPerMounth * 12;
       const capitalAprobe = capitalPerMount * 12;
-
+      const total = interestPerMounth + capitalPerMount;
       savePayments({
         userid,
         payments: payments12,
         interestPerMounth,
         capitalPerMount,
         capitalAprobe,
+        total,
         interestTotal
       });
 
@@ -71,6 +73,8 @@ const handlerPaypal = (req, res, next) => {
         bankRate,
         capital,
         interestPerMounth,
+        capitalPerMount,
+        total,
         capitalAprobe
       });
     } catch (error) {
