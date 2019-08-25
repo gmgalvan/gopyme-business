@@ -1,0 +1,22 @@
+{
+  "payments": [
+    {
+      "userid": "0f68f5b7-ce6a-4a00-a913-10700808e0c9",
+      "payments": 4800,
+      "interestPerMounth": 19200,
+      "capitalPerMount": 28800,
+      "capitalAprobe": 345600,
+      "interestTotal": 230400,
+      "id": 1
+    },
+    {
+      "userid": "0f68f5b7-ce6a-4a00-a913-10700808e0c9",
+      "payments": 4800,
+      "interestPerMounth": 19200,
+      "capitalPerMount": 28800,
+      "capitalAprobe": 345600,
+      "interestTotal": 230400,
+      "id": 2
+    }
+  ]
+}
