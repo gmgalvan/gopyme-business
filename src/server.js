@@ -7,6 +7,7 @@ const boom = require("boom");
 const morgan = require("morgan");
 const dataDb = require("../server/db")();
 const routesAuthMidellware = require("./routes/api/Auth/routesAuth");
+const routesPaypalMidellware = require("./routes/api/paypal/paypal");
 const {
   errorLog,
   clientErrorHandler,
@@ -28,6 +29,7 @@ const router = jsonServer.router(dataDb);
 // Route midellware
 app.use("api", router);
 routesAuthMidellware(app);
+routesPaypalMidellware(app);
 
 // Resource not found
 app.use((req, res) => {

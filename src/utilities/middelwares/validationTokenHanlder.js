@@ -5,8 +5,9 @@ const Boom = require("boom");
 
 function tokenHandler(req, res, next) {
   const { authorization } = req.headers;
-  const bearer = authorization.split(" ")[0];
-  if (authorization === undefined || bearer !== "Bearer") {
+  const bearer = authorization || false;
+
+  if (!bearer || bearer.split(" ")[0] !== "Bearer") {
     const {
       output: { statusCode, payload }
     } = Boom.unauthorized("Bad authoriation header");

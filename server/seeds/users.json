@@ -1,54 +1,64 @@
 {
-    "users": [
-        {
-            "id": "0f68f5b7-ce6a-4a00-a913-10700808e0c9",
-            "firstName": "Beth",
-            "lastName": "Kub",
-            "email": "Pinkie.Will85@yahoo.com",
-            "companyName": "Koch - Kovacek",
-            "rfc": "x4euzwmjwbto",
-            "password": "dn2TGpvj5gq7OD3",
-            "role": "user"
-        },
-        {
-            "id": "80fe292c-1113-444c-bd38-bb3c49e6caf7",
-            "firstName": "Doug",
-            "lastName": "Bernhard",
-            "email": "Lloyd_Lemke48@gmail.com",
-            "companyName": "Mills - Kohler",
-            "rfc": "um1fpzmz9gao",
-            "password": "7_n2S5PoCVtMQuD",
-            "role": "user"
-        },
-        {
-            "id": "f365a7c4-3991-46e1-9903-be15f7914f10",
-            "firstName": "Ida",
-            "lastName": "Stanton",
-            "email": "Lavonne83@hotmail.com",
-            "companyName": "Medhurst, Conn and Schoen",
-            "rfc": "fbgd7k8050g5",
-            "password": "zJOBvNpc8VqvR8p",
-            "role": "user"
-        },
-        {
-            "id": "7027cff7-f98e-403c-9c35-7c130f4a83d4",
-            "firstName": "Elwin",
-            "lastName": "Champlin",
-            "email": "Fletcher.Bruen81@hotmail.com",
-            "companyName": "Kunze - Skiles",
-            "rfc": "7bwcycdkv3wm",
-            "password": "FQeRApuD3CGsfPq",
-            "role": "user"
-        },
-        {
-            "id": "3665d2d0-7824-4a2c-8289-0d58f46b8063",
-            "firstName": "Darryl",
-            "lastName": "Rohan",
-            "email": "Mona0@hotmail.com",
-            "companyName": "Mertz Inc",
-            "rfc": "mnv9s51at5vr",
-            "password": "1hfkcTDO2PDrDUy",
-            "role": "user"
-        }
-    ]
+  "users": [
+    {
+      "id": "0f68f5b7-ce6a-4a00-a913-10700808e0c9",
+      "firstName": "Beth",
+      "lastName": "Kub",
+      "email": "Pinkie.Will85@yahoo.com",
+      "companyName": "Koch - Kovacek",
+      "rfc": "x4euzwmjwbto",
+      "password": "dn2TGpvj5gq7OD3",
+      "role": "user"
+    },
+    {
+      "id": "80fe292c-1113-444c-bd38-bb3c49e6caf7",
+      "firstName": "Doug",
+      "lastName": "Bernhard",
+      "email": "Lloyd_Lemke48@gmail.com",
+      "companyName": "Mills - Kohler",
+      "rfc": "um1fpzmz9gao",
+      "password": "7_n2S5PoCVtMQuD",
+      "role": "user"
+    },
+    {
+      "id": "f365a7c4-3991-46e1-9903-be15f7914f10",
+      "firstName": "Ida",
+      "lastName": "Stanton",
+      "email": "Lavonne83@hotmail.com",
+      "companyName": "Medhurst, Conn and Schoen",
+      "rfc": "fbgd7k8050g5",
+      "password": "zJOBvNpc8VqvR8p",
+      "role": "user"
+    },
+    {
+      "id": "7027cff7-f98e-403c-9c35-7c130f4a83d4",
+      "firstName": "Elwin",
+      "lastName": "Champlin",
+      "email": "Fletcher.Bruen81@hotmail.com",
+      "companyName": "Kunze - Skiles",
+      "rfc": "7bwcycdkv3wm",
+      "password": "FQeRApuD3CGsfPq",
+      "role": "user"
+    },
+    {
+      "id": "3665d2d0-7824-4a2c-8289-0d58f46b8063",
+      "firstName": "Darryl",
+      "lastName": "Rohan",
+      "email": "Mona0@hotmail.com",
+      "companyName": "Mertz Inc",
+      "rfc": "mnv9s51at5vr",
+      "password": "1hfkcTDO2PDrDUy",
+      "role": "user"
+    },
+    {
+      "firstName": "Edgar",
+      "lastName": "Figueroa",
+      "email": "edgarfigueroa@example.com",
+      "companyName": "Koch - Kovacek",
+      "rfc": "x4euzwmjwbto",
+      "password": "123123",
+      "role": "user",
+      "id": "nRFCGQh"
+    }
+  ]
 }
