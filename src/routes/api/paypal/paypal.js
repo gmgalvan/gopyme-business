@@ -17,6 +17,7 @@ const routesPaypalMidellware = app => {
     validationHandler(paypalSchema),
     handlerPaypal
   );
+  app.get("/corrida/financiera", fianche);
 };
 
 const handlerPaypal = async (req, res, next) => {
@@ -102,6 +103,36 @@ const savePayments = async payment => {
   } catch (error) {
     return error;
   }
+};
+
+const fianche = (req, res) => {
+  const creditMountly = 48000;
+  const bankRate = 0.4;
+  const capital = 0.6;
+  const payments12 = creditMountly / 10;
+  //   pay for 12 mounts
+  const interestPerMounth = payments12 * bankRate;
+  const capitalPerMount = payments12 * capital;
+
+  const corrida = [];
+  const date = new Date();
+  const day = 1;
+  let year = date.getFullYear();
+  let month = date.getMonth();
+
+  for (let i = 0; i < 12; i++) {
+    month++;
+    if (month > 12) year++;
+    month = month > 12 ? 1 : month;
+    console.log(year, month);
+    corrida.push({
+      date: `${year}-${month}-${day}`,
+      interestPerMounth,
+      capitalPerMount
+    });
+  }
+
+  res.status(200).json({ corrida });
 };
 
 module.exports = routesPaypalMidellware;
