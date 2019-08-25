@@ -59,6 +59,56 @@
       "password": "123123",
       "role": "user",
       "id": "nRFCGQh"
+    },
+    {
+      "name": "Daniel",
+      "mail": "daniel@daniel.com",
+      "rfc": "21341234123",
+      "campanyName": "gapyme",
+      "sw": "gopyme.com",
+      "password": "12123412314",
+      "role": "user",
+      "id": "5kMGCSw"
+    },
+    {
+      "name": "Daniel",
+      "mail": "daniel@daniel.com",
+      "rfc": "21341234123",
+      "campanyName": "gapyme",
+      "sw": "gopyme.com",
+      "password": "12123412314",
+      "role": "user",
+      "id": "yX5wm_T"
+    },
+    {
+      "name": "Daniel",
+      "mail": "daniel@daniel.com",
+      "rfc": "21341234123",
+      "campanyName": "gapyme",
+      "sw": "gopyme.com",
+      "password": "12123412314",
+      "role": "user",
+      "id": "sGCGmgy"
+    },
+    {
+      "name": "Daniel",
+      "mail": "daniel@daniel.com",
+      "rfc": "21341234123",
+      "campanyName": "gapyme",
+      "sw": "gopyme.com",
+      "password": "12123412314",
+      "role": "user",
+      "id": "A9o1RV0"
+    },
+    {
+      "name": "Daniel",
+      "mail": "daniel@daniel.com",
+      "rfc": "21341234123",
+      "campanyName": "gapyme",
+      "sw": "gopyme.com",
+      "password": "12123412314",
+      "role": "user",
+      "id": "HI8xEq3"
     }
   ]
 }

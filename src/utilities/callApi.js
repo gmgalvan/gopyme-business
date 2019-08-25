@@ -4,10 +4,11 @@
 const axios = require("axios");
 const { host } = require("../config");
 
-function callApi(port, endpoint, method = "get", data = {}) {
+function callApi(port, endpoint, method = "get", data = {}, headers = {}) {
   return new Promise(async (resolve, reject) => {
     try {
       headers = {
+        ...headers,
         "Content-Type": "application/json"
       };
 
